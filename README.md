@@ -18,3 +18,6 @@ Design of Enemy AI:
 - Errors are then deliberately injected into the AI’s target position so that it isn’t perfect and can be beat
 - AI errors increase as the ball speed increases, so it plays worse the longer the round goes on
 - AI isn’t allowed to do repeated middle-of-paddle shots because that’s boring for the player
+
+Note:
+- There are still some bugs in this game around collision detection once the ball gets going at very high speeds. This is a classic issue with Unity's built-in physics. To solve it, I would disable the built-in collision and switch to a raycast-based system to detect objects for the ball to bounce off, but honestly I'd rather work on other projects right now and I don't think anyone will play this anyway. My main goal in working on this Pong game was to play around with how to make a fallible enemy AI and I'm pretty happy with how that turned out so I'm moving on.
